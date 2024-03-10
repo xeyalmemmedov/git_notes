@@ -1,0 +1,52 @@
+**config**
+git config --global user.name "xeyalmemmedov" ==istifadəçi yaratmaq
+git config --list == meluimatlara baxmaq
+git config --global user.mail "xeyalmemmedov1603@gmail.com" == email elave etmek
+
+**init**
+ git init == .git faylını yaratır və bu fayl gitin konfiqurasiyalarını saxlayır
+
+**status**
+git status == dəyişiklik edilib amma stage zonasına atılmamış dəyişiklikləri göstərir
+
+**add**
+git add <filename> == faylları stage zonasına atmaq üçün istifadə olunur
+git add . == hamısını bir dəfəyə atır
+
+**commit**
+git commit -m "your_message" == stage zonasındakıları local repostoryə atır
+
+**log**
+git log == loglara baxa bilirik
+git log --oneline == daha qısa versiyada
+
+**checkout**
+git checkout <commit_id> -- .   == bu kod ile commit_id-ye beraber olan versiyaya dönürük
+git checkout -- <file_name> == verdiyimiz addakı dəyişikliyi geri qaytarır(əgər stage zonasına göndərməmişiksə)
+
+**diff**
+git diff == hansı faylda nə dəyişiklik etmişiksə onu göstərir
+git diff <file_name> == yalnız adın verdiyimiz faylda etdiyimiz dəyişiklikləri göstərir
+
+**reset**
+git reset HEAD <file_name> == adını verdiyimiz faylı stagedən geri qaytarır
+
+**remove**
+git rm <file_name>  == adını verdiyimiz local repoda olan faylı silir
+git rm -r <folder_name> == adını verdiyimiz qovluq üçün
+
+**move**
+git mv <evvelki_ad> <yeni_ad> == faylin adini deyistirir
+git mv <fayl_adi> <papka_adi> == fayli papkaya dasiyir
+git mv <fayl_adi> <papka_adi/yeni_ad> == faylin hem adini hemde yerini deyisir
+
+**alias**
+git config --global alias.<komandanin_qisaltma_adi> <komandanin_esl_adi> == komandalrin adini qisaltmaq ucun istifade olunur
+
+**push**
+git remote add origin <sunucunun_adresi> == verdiyimiz sunucunu baglayiriq locala
+git push -u origin master == baglandigimiz sunucuya fayllari gonderirik(burada origin ve master deyise biler)
+
+**pull**
+git pull == githubda edilmis deyisiklikleri locala cekmek ucun istifade olunur
+ 
